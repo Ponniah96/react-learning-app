@@ -22,8 +22,18 @@ import FunctionalComponentProps from './3.ReactComponent/2-FunctionalComponent/3
 import FunctionalComponentStates from './3.ReactComponent/2-FunctionalComponent/4.1.StatesIntro';
 import FunctionStatesToggle from './3.ReactComponent/2-FunctionalComponent/4.2.StatesToggle';
 import FunctionalStatesIncrement from './3.ReactComponent/2-FunctionalComponent/4.3.StatesIncrement';
+import FunctionalStateDataTypes from './3.ReactComponent/2-FunctionalComponent/4.5.StateDataTypes';
 import FunctionEvents from './3.ReactComponent/2-FunctionalComponent/5.Events';
-import FunctionalForms from './3.ReactComponent/2-FunctionalComponent/7.Forms';
+import FunctionRef from './3.ReactComponent/2-FunctionalComponent/6.refs';
+import FunctionalEffects from './3.ReactComponent/2-FunctionalComponent/7.UseEffect';
+import FunctionalUseContext from './3.ReactComponent/2-FunctionalComponent/8.UseContext';
+import FunctionalMemo from './3.ReactComponent/2-FunctionalComponent/9.UseMemo';
+import FunctionalCallback from './3.ReactComponent/2-FunctionalComponent/10.0.UseCallback';
+import FunctionalReducer from './3.ReactComponent/2-FunctionalComponent/11.UseReducer';
+import FunctionalForms from './3.ReactComponent/2-FunctionalComponent/12.Forms';
+import FunctionalRouter from './3.ReactComponent/2-FunctionalComponent/13.Router';
+
+import CustomHooks from './3.ReactComponent/2-FunctionalComponent/14.0.CustomHooksParent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,23 +41,32 @@ root.render(
     <div className='react-app'>        
         <Header />
         <div className='react-app-components'>
-          <ClassIntro />
-          <ClassComponentJSX />
-          <ClassComponentProps name="Ponniah" age="26"/>
-          <ClassComponentStates />
-          <ClassStatesToggle />
-          <ClassStatesIncrement />
-          <ClassEvents />
-          <ClassForms />
-          <ClassArrays />
-          <FunctionalIntro />
-          <FunctionalComponentJSX />
-          <FunctionalComponentProps name="Ponniah" age="26"/>
-          <FunctionalComponentStates />
-          <FunctionStatesToggle />
-          <FunctionalStatesIncrement />
-          <FunctionEvents />
-          <FunctionalForms />
+          <ClassIntro /><hr></hr>
+          <ClassComponentJSX /><hr></hr>
+          <ClassComponentProps name="Ponniah" age="26"/> <hr></hr>
+          <ClassComponentStates /> <hr></hr>
+          <ClassStatesToggle /> <hr></hr>
+          <ClassStatesIncrement /> <hr></hr>
+          <ClassEvents /> <hr></hr>
+          <ClassForms /> <hr></hr>
+          <ClassArrays /> <hr></hr>
+          <FunctionalIntro /> <hr></hr>
+          <FunctionalComponentJSX /> <hr></hr>
+          <FunctionalComponentProps name="Ponniah" age="26"/> <hr></hr>
+          <FunctionalComponentStates /> <hr></hr>
+          <FunctionStatesToggle /> <hr></hr>
+          <FunctionalStatesIncrement /> <hr></hr>
+          <FunctionalStateDataTypes /> <hr></hr>
+          <FunctionEvents /> <hr></hr>
+          <FunctionRef /> <hr></hr>
+          <FunctionalEffects /> <hr></hr>
+          <FunctionalUseContext /> <hr></hr>
+          <FunctionalMemo /> <hr></hr>
+          <FunctionalCallback /> <hr></hr>
+          <FunctionalForms /> <hr></hr>
+          <FunctionalRouter /> <hr></hr>
+          <FunctionalReducer /> <hr></hr>
+          <CustomHooks /> <hr></hr>
         </div>
         <Footer />
     </div>
