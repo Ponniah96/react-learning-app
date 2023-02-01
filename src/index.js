@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import './App.css';
+import source from "./reactBasics.pdf"
 import Header from "./1.HeaderComponent/1.header";
 import Footer from "./2.FooterComponent/1.Footer";
 import ClassIntro from "./3.ReactComponent/1.ClassComponent/1.Intro";
@@ -41,6 +42,7 @@ root.render(
     <div className='react-app'>        
         <Header />
         <div className='react-app-components'>
+          <iframe src={source} width="100%" height="600px" /> <hr></hr>
           <ClassIntro /><hr></hr>
           <ClassComponentJSX /><hr></hr>
           <ClassComponentProps name="Ponniah" age="26"/> <hr></hr>
