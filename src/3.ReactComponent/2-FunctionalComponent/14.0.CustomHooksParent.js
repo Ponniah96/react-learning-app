@@ -1,14 +1,45 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import useAdd from "./14.1.CustomHooksChild1"
 import useFetchAPI from "./14.2.CustomHookschild2";
+import useResponse from "./14.3CustomHooksChild3";
 export default function CustomHooks(){
     const [result1]=useAdd(5,10)
     const [result2]=useAdd(100,50);
     const [result3]=useAdd(-50,49);
     const [result4]=useFetchAPI("https://jsonplaceholder.typicode.com/todos");
     const [result5]=useFetchAPI("https://engineering-task.elancoapps.com/api/raw");
-    console.log(result4);
-    console.log(result5);
+    const [result, setResult] = useState(0);
+    const [response1] = useResponse("https://reqres.in/api/users/1");
+    const [response2] = useResponse("https://reqres.in/api/users/2");
+    const [response3] = useResponse("https://reqres.in/api/users/3");
+    const [response100] = useResponse("https://reqres.in/api/users/100");
+    useEffect(() => {
+        if (result !== 0) {
+        if (result === 1 && response1 !== null) {
+            document.getElementById("email-value").innerText = response1.data.email;
+            document.getElementById("name-value").innerText =
+            response1.data.first_name;
+            document.getElementById("image-source").src = response1.data.avatar;
+        } else if (result === 2 && response2 !== null) {
+            document.getElementById("email-value").innerText = response2.data.email;
+            document.getElementById("name-value").innerText =
+            response2.data.first_name;
+            document.getElementById("image-source").src = response2.data.avatar;
+        } else if (result === 3 && response3 !== null) {
+            document.getElementById("email-value").innerText = response3.data.email;
+            document.getElementById("name-value").innerText =
+            response3.data.first_name;
+            document.getElementById("image-source").src = response3.data.avatar;
+        } else if (result === 100 && response100.data === undefined) {
+            document.getElementById("email-value").innerText = "";
+            document.getElementById("name-value").innerText = "";
+            document.getElementById("image-source").src =
+            "https://pdtxar.com/wp-content/uploads/2019/04/person-placeholder.jpg";
+            alert("Data not Found");
+        }
+        }
+        setResult(0);
+    }, [result]);
     return(
         <>
             <p>Custom Hooks</p>
@@ -58,6 +89,45 @@ export default function CustomHooks(){
                     ):"":""}
                 </tbody>
             </table>
+            <button
+                onClick={() => setResult(1)}
+                style={{ margin: "20px", padding: "15px" }}
+            >
+                1
+            </button>
+            <button
+                onClick={() => setResult(2)}
+                style={{ margin: "20px", padding: "15px" }}
+            >
+                2
+            </button>
+            <button
+                onClick={() => setResult(3)}
+                style={{ margin: "20px", padding: "15px" }}
+            >
+                3
+            </button>
+            <button
+                onClick={() => setResult(100)}
+                style={{ margin: "20px", padding: "15px" }}
+            >
+                100
+            </button>
+            <div>
+                <p>
+                Email:<span id="email-value"></span>
+                </p>
+                <p>
+                Name:<span id="name-value"></span>
+                </p>
+                <img
+                id="image-source"
+                src="https://pdtxar.com/wp-content/uploads/2019/04/person-placeholder.jpg"
+                style={{ width: "200px", height: "200px" }}
+                alt="imgPath"
+                />
+            </div>
+    
         </>
     )
 }
