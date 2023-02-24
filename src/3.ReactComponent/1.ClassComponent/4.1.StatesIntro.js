@@ -1,4 +1,7 @@
 import React,{Component} from "react";
+import ClassStatesToggle from "./4.2.StatesToggle";
+import ClassStatesIncrement from "./4.3.StatesIncrement";
+
 export default class ClassComponentStates extends Component{
     constructor(props){
         super(props);
@@ -23,6 +26,14 @@ export default class ClassComponentStates extends Component{
                     <li>{language4}</li>
                     <li>{language5}</li>
                 </ol>
+                <br></br>
+                <hr></hr>
+                <ClassStatesToggle />
+                <br></br>
+                <hr></hr>
+                <ClassStatesIncrement />
+                <br></br>
+                <hr></hr>
             </div>
         )
     }

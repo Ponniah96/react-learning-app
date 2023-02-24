@@ -11,8 +11,8 @@ export default function Footer(){
     })
     return(
         <div className="react-app-footer">
-            <p className="react-app-footer-text">Thank You!!!</p>
-            <p className="react-app-footer-text">{date} {time}</p>
+            <p className="react-app-footer-text" style={{'marginBottom':'5px'}}>Thank You!!!</p>
+            <p className="react-app-footer-text" style={{'marginTop':'5px'}}>{date} {time}</p>
         </div>
     )
 }

@@ -1,4 +1,7 @@
-import { useState } from "react"
+import { useState } from "react";
+import FunctionStatesToggle from "./4.2.StatesToggle";
+import FunctionalStatesIncrement from "./4.3.StatesIncrement";
+import FunctionalStateDataTypes from "./4.5.StateDataTypes";
 
 export default function FunctionalComponentStates(){
     const [language1]=useState("HTML");
@@ -17,6 +20,18 @@ export default function FunctionalComponentStates(){
                 <li>{language4}</li>
                 <li>{language5}</li>
             </ol>
+            <br></br>
+            <hr></hr>
+            <br></br>
+            <FunctionStatesToggle />
+            <br></br>
+            <hr></hr>
+            <br></br>
+            <FunctionalStatesIncrement />
+            <br></br>
+            <hr></hr>
+            <br></br>
+            <FunctionalStateDataTypes />
         </div>
     )
 }

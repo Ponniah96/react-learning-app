@@ -6,7 +6,7 @@ export default function useResponse(data) {
     fetch(data)
       .then((res) => res.json())
       .then((data) => setResponse(data))
-      .catch(err=>{console.log(err)});
+      .catch(err=>{});
   }, [data]);
   return [response];
 }

@@ -7,6 +7,8 @@ export default function CustomHooks(){
     const [result2]=useAdd(100,50);
     const [result3]=useAdd(-50,49);
     const [result4]=useFetchAPI("https://jsonplaceholder.typicode.com/todos");
+    const [result1Hook,setresult1Hook]=useState([]);
+    const [result4SearchTitle,setResult4SearchTitle]=useState("")
     const [result5]=useFetchAPI("https://engineering-task.elancoapps.com/api/raw");
     const [result, setResult] = useState(0);
     const [response1] = useResponse("https://reqres.in/api/users/1");
@@ -40,6 +42,15 @@ export default function CustomHooks(){
         }
         setResult(0);
     }, [result]);
+    useState(()=>{
+        setresult1Hook(result4);
+        console.log(result1Hook);
+    },[result4])
+    useEffect(()=>{
+        if(result4SearchTitle.length>0){
+           const result= result4.filter(val=>val.title.toLowerCase().includes(result4SearchTitle.toLowerCase()));  
+        }        
+    },[result4SearchTitle]);
     return(
         <>
             <p>Custom Hooks</p>
@@ -53,6 +64,7 @@ export default function CustomHooks(){
             <p>Example 2: Add 100 + 50. resukt is {result2}</p>
             <p>Example 3: Add -50 + 49. resukt is {result3}</p>
             <p><b>Advance Example(useAPI data)</b></p>
+            <input type="text" onChange={(e)=>setResult4SearchTitle(e.target.value)} value={result4SearchTitle} placeholder="Search Title"/>
             <table style={{border:"1px solid",borderCollapse:"collapse"}}>
                 <thead>
                     <th style={{border:"1px solid",borderCollapse:"collapse"}}>SNo</th>

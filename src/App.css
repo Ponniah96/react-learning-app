@@ -26,6 +26,7 @@
 
 .react-app-header-text{
   font-size: 30px;
+  margin: 20px 0px;
 }
 
 .react-app-footer-text{
@@ -53,7 +54,7 @@
 }
 
 .react-app-components{
-  padding: 20px 20px 200px 20px;
+  /* padding: 20px 20px 200px 20px; */
 }
 
 
@@ -67,6 +68,61 @@
 .react-app-functionalComponents-subheader{
   font-size: 20px;
 }
+
+
+/***Top Nav Bar changes starts **/
+.top-nav-bar{
+  width: 100%;
+  background: black;
+}
+
+.top-nav-bar ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px;
+}
+
+.top-nav-bar ul li:hover{
+  background: grey;
+}
+
+.top-nav-bar ul li .top-nav-bar-links{
+  text-decoration: none;
+  color: #999999;
+  font-weight: 600;
+}
+
+.top-nav-bar ul li:hover .top-nav-bar-links{
+color: white;
+
+}
+
+.top-nav-dropdown{
+  position: absolute;
+  box-shadow: 0 0 4px 2px(0,0,0.05);
+  border: 1px solid #d0d0d0;
+  background: white;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.top-nav-dropdown .top-nav-dropdown-links{
+  display: block;
+  padding: 10px 20px;
+  color: grey !important;
+  text-decoration: none;
+}
+
+.top-nav-dropdown .top-nav-dropdown-links:hover{
+  background: lightgray;
+  color: white  !important;
+}
+
+.top-nav-bar ul li:hover .top-nav-dropdown{
+  display: block !important;
+}
+/***Top Nav Bar changes Ends **/
+
 
 
 /* .App-header {

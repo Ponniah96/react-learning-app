@@ -1,13 +1,9 @@
-import React, {useState} from "react";
-
-export default function HomeComponent(){
+import React from "react";
+import Source from "../ReactBasics.pdf"
+export default function ReactIntroduction(){
     return(
-        <div>
-            <div>
-                <button>Introduction</button>
-                <button>React Class Components</button>
-                <button>React Functional Component</button>
-            </div>
-        </div>
+        <>
+            <iframe src={Source} width="95%" height="500px" title="React Introduction" />
+        </>
     )
 }
