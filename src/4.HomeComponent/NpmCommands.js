@@ -82,6 +82,13 @@ export default function NpmCommands(){
                             <input id="react-material-ui-command3" type="text" readOnly={true} disabled={true} value="npm install @mui/icons-material" /><button onClick={()=>(copyCliboard("react-material-ui-command3"))}>Copy</button><br></br>                            
                         </td>
                     </tr>
+                    <tr key={8}>
+                        <td style={{border:"1px solid",borderCollapse:"collapse"}}>8</td>
+                        <td style={{border:"1px solid",borderCollapse:"collapse"}}>React Code Syntax Highlighter</td>
+                        <td style={{border:"1px solid",borderCollapse:"collapse"}}>
+                            <input id="react-syntax-highlighter-command1" type="text" readOnly={true} disabled={true} value="npm i react-syntax-highlighter" /><button onClick={()=>(copyCliboard("react-syntax-highlighter-command1"))}>Copy</button><br></br> 
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </>
