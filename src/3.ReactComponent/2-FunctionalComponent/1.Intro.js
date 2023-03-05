@@ -5,7 +5,7 @@ export default function Intro(){
     const codeString = `
 import "../../App.css";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 export default function Intro(){
     return(
         <div>
@@ -13,7 +13,7 @@ export default function Intro(){
                 <p className="react-app-functionalComponents-header">Welcome to React Functional Component</p>        
             </div>
             <div>
-                <SyntaxHighlighter language="javascript" style={docco}>
+                <SyntaxHighlighter language="javascript" style={atelierCaveDark}>
                     {codeString}
                 </SyntaxHighlighter>
             </div>
