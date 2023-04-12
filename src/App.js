@@ -36,6 +36,9 @@ import FunctionalRouter from './3.ReactComponent/2-FunctionalComponent/13.Router
 
 import CustomHooks from './3.ReactComponent/2-FunctionalComponent/14.0.CustomHooksParent';
 import PromiseFunction from './3.ReactComponent/2-FunctionalComponent/15.PromiseFunction';
+import Fetch from "./3.ReactComponent/2-FunctionalComponent/16.fetch";
+import Axios from "./3.ReactComponent/2-FunctionalComponent/17.Axios";
+
 
 export default function App(){
     return(
@@ -48,7 +51,7 @@ export default function App(){
                                 <Link className="top-nav-bar-links" to="/react-learning-app">Home</Link>
                             </li>
                             <li>
-                                <a className="top-nav-bar-links" onClick={(e)=>e.preventDefault()}>Class Components</a>
+                                <a className="top-nav-bar-links" onClick={(e)=>e.preventDefault()} href="javascript:void(0)">Class Components</a>
                                 <div className="top-nav-dropdown"  style={{"display":"none"}}>
                                     <Link className="top-nav-dropdown-links" to="/class-intro">Introduction</Link>
                                     <Link className="top-nav-dropdown-links" to="/class-jsx">JSX</Link>
@@ -87,6 +90,8 @@ export default function App(){
                                     {/* <Link className="top-nav-dropdown-links" to="/functional-router">Router</Link> */}
                                     <Link className="top-nav-dropdown-links" to="/functional-promise">Promise</Link>
                                     <Link className="top-nav-dropdown-links" to="/functional-forms">Forms</Link>
+                                    <Link className="top-nav-dropdown-links" to="/functional-fetch">Fetch</Link>
+                                    <Link className="top-nav-dropdown-links" to="/functional-axios">Axios</Link>
                                 </div>
                             </li>
                             <li>
@@ -138,6 +143,8 @@ export default function App(){
                         <Route path="/functional-promise" element={<PromiseFunction/>}></Route>
                         <Route path="/functional-router" element={<FunctionalRouter/>}></Route>
                         <Route path="/functional-forms" element={<FunctionalForms/>}></Route>
+                        <Route path="/functional-fetch" element={<Fetch/>}></Route>
+                        <Route path="/functional-axios" element={<Axios/>}></Route>
                         {/* <Route path="/react-cart-application" component={() => { window.location = 'https://ponniah96.github.io/reactCartApplication/'; return null;} }/> */}
                         <Route path="/npm-commands" element={<NpmCommands />}></Route>
                     </Routes>

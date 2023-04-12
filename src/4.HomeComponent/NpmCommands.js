@@ -89,6 +89,14 @@ export default function NpmCommands(){
                             <input id="react-syntax-highlighter-command1" type="text" readOnly={true} disabled={true} value="npm i react-syntax-highlighter" /><button onClick={()=>(copyCliboard("react-syntax-highlighter-command1"))}>Copy</button><br></br> 
                         </td>
                     </tr>
+                    <tr key={9}>
+                        <td style={{border:"1px solid",borderCollapse:"collapse"}}>9</td>
+                        <td style={{border:"1px solid",borderCollapse:"collapse"}}>React Axios</td>
+                        <td style={{border:"1px solid",borderCollapse:"collapse"}}>
+                            <input id="react-axios-command1" type="text" readOnly={true} disabled={true} value="npm install axios" /><button onClick={()=>(copyCliboard("react-axios-command1"))}>Copy</button><br></br> 
+                            <input id="react-axios-command2" type="text" readOnly={true} disabled={true} value="npm install use-axios-client" /><button onClick={()=>(copyCliboard("react-axios-command2"))}>Copy</button><br></br> 
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </>
