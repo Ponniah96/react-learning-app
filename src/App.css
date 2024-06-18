@@ -1,4 +1,4 @@
-.react-app{
+.react-app {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -8,29 +8,29 @@
 }
 
 .react-app-header,
-.react-app-footer{
+.react-app-footer {
   background-color: black;
-  text-align: center;  
+  text-align: center;
   width: 100%;
 }
 
-.react-app-header{
+.react-app-header {
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
-.react-app-footer{
+.react-app-footer {
   position: fixed;
   bottom: 0;
 }
 
-.react-app-header-text{
+.react-app-header-text {
   font-size: 30px;
   margin: 20px 0px;
 }
 
-.react-app-footer-text{
+.react-app-footer-text {
   font-size: 24px;
 }
 
@@ -54,77 +54,72 @@
   }
 }
 
-.react-app-components{
+.react-app-components {
   /* padding: 20px 20px 200px 20px; */
 }
 
-
 .react-app-classComponents-header,
-.react-app-functionalComponents-header{
+.react-app-functionalComponents-header {
   font-size: 24px;
   font-weight: 600;
 }
 
 .react-app-classComponents-subheader,
-.react-app-functionalComponents-subheader{
+.react-app-functionalComponents-subheader {
   font-size: 20px;
 }
 
-
 /***Top Nav Bar changes starts **/
-.top-nav-bar{
+.top-nav-bar {
   width: 100%;
   background: black;
 }
 
-.top-nav-bar ul li{
+.top-nav-bar ul li {
   list-style-type: none;
   display: inline-block;
   padding: 15px;
 }
 
-.top-nav-bar ul li:hover{
+.top-nav-bar ul li:hover {
   background: grey;
 }
 
-.top-nav-bar ul li .top-nav-bar-links{
+.top-nav-bar ul li .top-nav-bar-links {
   text-decoration: none;
   color: #999999;
   font-weight: 600;
 }
 
-.top-nav-bar ul li:hover .top-nav-bar-links{
-color: white;
-
+.top-nav-bar ul li:hover .top-nav-bar-links {
+  color: white;
 }
 
-.top-nav-dropdown{
+.top-nav-dropdown {
   position: absolute;
-  box-shadow: 0 0 4px 2px(0,0,0.05);
+  box-shadow: 0 0 4px 2px (0, 0, 0.05);
   border: 1px solid #d0d0d0;
   background: white;
   border-radius: 4px;
   z-index: 10;
 }
 
-.top-nav-dropdown .top-nav-dropdown-links{
+.top-nav-dropdown .top-nav-dropdown-links {
   display: block;
   padding: 10px 20px;
   color: grey !important;
   text-decoration: none;
 }
 
-.top-nav-dropdown .top-nav-dropdown-links:hover{
+.top-nav-dropdown .top-nav-dropdown-links:hover {
   background: lightgray;
-  color: white  !important;
+  color: white !important;
 }
 
-.top-nav-bar ul li:hover .top-nav-dropdown{
+.top-nav-bar ul li:hover .top-nav-dropdown {
   display: block !important;
 }
 /***Top Nav Bar changes Ends **/
-
-
 
 /* .App-header {
   background-color: #282c34;
@@ -145,38 +140,38 @@ color: white;
   color: #61dafb;
 } */
 
-
-.flex-body{
+.flex-body {
   display: flex;
   /* padding-right: 100px; */
+  flex-direction: column;
 }
 
-.flex-left-content{
-  flex: 40%;
+.flex-left-content {
+  /* flex: 40%; */
+  flex: 100%;
 }
 
-.flex-right-content{
-  flex: 40%;
+.flex-right-content {
+  /* flex: 40%; */
+  flex: 100%;
   position: relative;
 }
 
-@media(max-width:768px){
-  .flex-body{
-      flex-wrap: wrap;
-      padding-right: 0px;
+@media (max-width: 768px) {
+  .flex-body {
+    flex-wrap: wrap;
+    padding-right: 0px;
   }
   .flex-left-content,
-  .flex-right-content{
-      flex:100%;
+  .flex-right-content {
+    flex: 100%;
   }
 }
 
-.copy-icon{
+.copy-icon {
   position: absolute;
   top: 18px;
   right: 0px;
   border: 1px solid white;
   background-color: white;
 }
-
-
