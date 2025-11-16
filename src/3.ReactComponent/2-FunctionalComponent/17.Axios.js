@@ -10,7 +10,7 @@ export default function Axios(){
     const [postData,postMethod]    = useState({});
     const [putData,putMethod]      = useState({});
     const [deleteData,deleteMethod]= useState({});
-    const [errorData,errorMethod]  = useState([]);
+    const [errorData,errorMethod]  = useState({});
     const [createData,createMethod]= useState([]);
     const [asyncData,asynMethod]   = useState({});
     const codeString=`import React, {useState,useEffect} from "react";
@@ -48,7 +48,7 @@ export default function Axios(){
                 }
             }
             getAxiosData();
-        })
+        }, [getData, asyncData])
         function CreatePostRequest(){
             axios.post('https://jsonplaceholder.typicode.com/posts',
             {title:"Post Request ",body:"Axios Post request"}).then(response=>postMethod(response.data))
@@ -118,8 +118,8 @@ export default function Axios(){
                         <li><b>Error Method</b>
                             <p>Error method is used to define what is actual error code in axios</p>
                             <p>Syntax: <b>axios.get().catch(error function())</b></p>
-                            {errorData.length !==0 ?<div><p>Error Code: {errorData.code}</p> 
-                            <p>Error message: {errorData.message}</p></div>:<p>No Error Response</p>}
+                            {errorData && errorData.code ? <div><p>Error Code: {errorData.code}</p> 
+                            <p>Error message: {errorData.message}</p></div> : <p>No Error Response</p>}
                         </li>
                     </ol>
                     <br></br>
@@ -190,6 +190,37 @@ export default function Axios(){
             <div className="flex-body" style={{"paddingBottom":"150px"}}>
                 <div className="flex-left-content">
                     <h1>Axios</h1>
+                    <p><b>Axios in Brief:</b></p>
+                    <p>Axios is a promise-based HTTP client for JavaScript, used to make HTTP requests from browsers and Node.js. It simplifies handling requests and responses, supports automatic JSON transformation, and provides easy error handling.</p>
+                    <p><b>Advantages:</b></p>
+                    <ul>
+                        <li>Automatic JSON data transformation for requests and responses.</li>
+                        <li>Supports request and response interceptors for global logic.</li>
+                        <li>Handles errors with detailed status codes and messages.</li>
+                        <li>Works in both browser and Node.js environments.</li>
+                        <li>Supports cancellation of requests and timeout configuration.</li>
+                    </ul>
+                    <p><b>Disadvantages:</b></p>
+                    <ul>
+                        <li>Additional dependency compared to native fetch.</li>
+                        <li>Bundle size is larger than fetch API.</li>
+                        <li>May require polyfills for older browsers.</li>
+                    </ul>
+                    <p><b>Why Axios is Preferred Over Fetch:</b></p>
+                    <ul>
+                        <li>Axios automatically transforms request and response data to JSON, while fetch requires manual parsing.</li>
+                        <li>Axios provides better error handling; fetch only rejects on network failure, not HTTP errors.</li>
+                        <li>Axios supports request cancellation and interceptors, which fetch does not natively support.</li>
+                        <li>Axios has built-in support for timeouts and progress events.</li>
+                    </ul>
+                    <p><b>Latest Updates in Axios (2024):</b></p>
+                    <ul>
+                        <li>Improved TypeScript support and type safety.</li>
+                        <li>Enhanced support for HTTP/2 and modern protocols.</li>
+                        <li>Better performance and reduced bundle size.</li>
+                        <li>New hooks for React integration (e.g., <code>useAxios</code>).</li>
+                        <li>Security improvements and bug fixes.</li>
+                    </ul>
                     <p>Axios is an HTTP Client Library that allow you to make request to an endpoint </p>
                     <p>Request we can gett it either from thrid party API or else own Node JS Application</p>
                     <p><b>Advantages</b></p>

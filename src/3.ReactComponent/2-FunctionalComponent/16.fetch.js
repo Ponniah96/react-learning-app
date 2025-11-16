@@ -67,7 +67,36 @@ export default function Fetch() {
             <div className="flex-left-content">
                 <div className="fetch">
                     <h1>Fetch Method </h1>
-                    <p>Fetch API through fetch method allows us to make HTTP Request of REST API and it will give response in JSON format</p>
+                    {/* <p>Fetch API through fetch method allows us to make HTTP Request of REST API and it will give response in JSON format</p> */}
+                    <p>
+                      <b>Definition:</b> The Fetch API is a modern JavaScript interface for making HTTP requests to servers. It provides a promise-based way to fetch resources asynchronously, replacing older XMLHttpRequest methods.
+                    </p>
+                    <p>
+                      <b>Advantages:</b>
+                      <ul>
+                        <li>Promise-based, making it easier to handle asynchronous operations.</li>
+                        <li>Simpler and cleaner syntax compared to XMLHttpRequest.</li>
+                        <li>Supports modern features like streaming and custom request/response handling.</li>
+                        <li>Works in most modern browsers and supports CORS.</li>
+                      </ul>
+                    </p>
+                    <p>
+                      <b>Disadvantages:</b>
+                      <ul>
+                        <li>No built-in support for request cancellation (until AbortController).</li>
+                        <li>Does not reject on HTTP error status (e.g., 404, 500); must check manually.</li>
+                        <li>Limited support in very old browsers.</li>
+                      </ul>
+                    </p>
+                    <p>
+                      <b>Recent Updates:</b>
+                      <ul>
+                        <li><b>AbortController:</b> Allows aborting fetch requests.</li>
+                        <li><b>Streams API integration:</b> Enables handling large files and real-time data.</li>
+                        <li><b>Request/Response body as ArrayBuffer, Blob, FormData, etc.:</b> More flexible data handling.</li>
+                        <li><b>Improved error handling and credentials options.</b></li>
+                      </ul>
+                    </p>
                     <p>Fetch API performs 2 types of operations</p>
                     <ul>
                         <li><b>GET Method: </b>It helps us to send HTTP request to an endpoint</li>

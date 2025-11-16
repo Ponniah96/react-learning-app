@@ -106,6 +106,7 @@ export default function FunctionalForms(){
         <>
             <div className="flex-body">
                 <div className="flex-left-content">
+                    <p className="react-app-classComponents-subheader">React Forms</p>
                     <div className="forms-container">
                         <form onSubmit={(e)=>onSubmitForm(e)}>
                             <label>Name:

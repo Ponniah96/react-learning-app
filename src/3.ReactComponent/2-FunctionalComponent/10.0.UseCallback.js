@@ -7,9 +7,7 @@ export default function FunctionalCallback(){
     const [count,setCount]=useState(0);
     const [todoWithoutCallback,setTodoWithoutCallback]=useState([]);
     const [todoWithCallback,setTodoWithCallback]=useState([]);
-    const addTodoWithoutCallback = () =>{
-        setTodoWithoutCallback((todo)=>{return [...todo,"WithoutCallback Item"]})
-    }
+    const addTodoWithoutCallback = () =>{ setTodoWithoutCallback((todo)=>{return [...todo,"WithoutCallback Item"]})}
     const addTodoWithCallback= useCallback(()=>{setTodoWithCallback((todo)=>{return[...todo,"WithCallback Function"]})},[])
     const codeString=`
 import React,{useState,useCallback} from "react";

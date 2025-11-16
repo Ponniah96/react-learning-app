@@ -262,7 +262,7 @@ export default function useResponse(data) {
     },[result4])
     useEffect(()=>{
         if(result4SearchTitle.length>0){
-           const result= result4.filter(val=>val.title.toLowerCase().includes(result4SearchTitle.toLowerCase()));  
+           const result= result4.filter(val=>val.title.toLowerCase().includes(result4SearchTitle.toLowerCase())); 
         }        
     },[result4SearchTitle]);
     return(

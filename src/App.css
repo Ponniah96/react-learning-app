@@ -21,13 +21,16 @@
 }
 
 .react-app-footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
 }
 
 .react-app-header-text {
   font-size: 30px;
   margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .react-app-footer-text {
@@ -144,6 +147,8 @@
   display: flex;
   /* padding-right: 100px; */
   flex-direction: column;
+  max-width: 1000px;
+  margin: 15px auto;
 }
 
 .flex-left-content {

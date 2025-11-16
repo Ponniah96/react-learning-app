@@ -252,12 +252,6 @@ export default function FunctionalStateDataTypes(){
                     <br></br>
                     <hr></hr>
                     <br></br>
-                    <br></br>
-                    <hr></hr>
-                    <br></br>
-                    <br></br>
-                    <hr></hr>
-                    <br></br>
                 </div>        
             </div>
             <div className="flex-right-content">

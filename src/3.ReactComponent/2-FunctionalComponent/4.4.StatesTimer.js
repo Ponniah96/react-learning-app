@@ -5,8 +5,6 @@ export default function FunctionalStatesTimer(){
     const [startTimers,setStartTimers]=useState(false);
     const [stopTimers,setStopTimers]=useState(false);
     useEffect(()=>{
-        console.log("Start Timers: ", startTimers);
-        console.log("Stop Timers: ", stopTimers);
         if(startTimers && stopTimers===false){
             var timer=setTimeout(()=>{
                 setCount(count+1);

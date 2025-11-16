@@ -3,7 +3,7 @@ import "../App.css"
 function Header(){
     return(
         <div className="react-app-header">
-            <p className="react-app-header-text">Welcome to React App Basics Tutorial!! <img src={logo} className="App-logo" alt="logo"></img></p>
+            <p className="react-app-header-text">Welcome to React App Tutorial!! <img src={logo} className="App-logo" alt="logo"></img></p>
             
         </div>
     )

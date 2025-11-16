@@ -208,7 +208,7 @@ export default function PromiseFunction() {
       <div> Show suggestions here</div>
       <div>Result Fruits are:</div>
       <ol id="result">
-        {searchResult !== null ? searchResult.map((val) => <li>{val}</li>) : ""}
+        {searchResult !== null ? searchResult.map((val, idx) => <li key={idx}>{val}</li>) : ""}
       </ol>
     </div>
   );
@@ -232,6 +232,22 @@ export default function PromiseFunction() {
     
     <div className="flex-body">
         <div className="flex-left-content">
+          <p className="react-app-classComponents-subheader">React Promises</p>
+          <p style={{marginBottom: '1em'}}>
+            <strong>Definition:</strong> <br/>
+            <span>
+              <b>Promises</b> are objects representing the eventual completion or failure of an asynchronous operation. <br/>
+              <b>async</b> marks a function as asynchronous and makes it return a Promise. <br/>
+              <b>await</b> pauses the execution of the async function until the Promise resolves or rejects, making asynchronous code easier to read and write.
+            </span>
+            <br />
+            <strong>Stages of Promises:</strong>
+            <ul>
+              <li><b>Pending:</b> The initial state, neither fulfilled nor rejected.</li>
+              <li><b>Fulfilled:</b> The operation completed successfully.</li>
+              <li><b>Rejected:</b> The operation failed.</li>
+            </ul>
+          </p>
             <div className="App">
               <input onChange={(e) => setSearch(e.target.value)} />
               <div> Show suggestions here</div>

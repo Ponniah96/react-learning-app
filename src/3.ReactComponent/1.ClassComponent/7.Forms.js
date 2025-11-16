@@ -74,7 +74,8 @@ export default class ClassForms extends Component{
     }    
     handleSubmit(e){
         e.preventDefault();
-        alert("Form Values are: ",this.state.name,this.state.age,this.state.username,this.state.password);
+        alert("check console");
+        console.log("Form Values are: ",this.state.name,this.state.age,this.state.username,this.state.password);
     }
     render(){
         return(
