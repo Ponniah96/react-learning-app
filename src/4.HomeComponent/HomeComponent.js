@@ -16,7 +16,7 @@ export default function ReactIntroduction() {
         <p>JavaScript functions that return JSX elements directly.
         Modern approach using hooks for state and lifecycle management.</p>
         
-        <hr />
+        <hr style={{width: '100%'}} />
         <h3>Core Concepts</h3>
         <h4 style={{marginBottom: 0}}>JSX:</h4>
         <p>JavaScript XML syntax extension that allows writing HTML-like code in JavaScript.
@@ -42,7 +42,7 @@ export default function ReactIntroduction() {
         <p>React uses SyntheticEvents that wrap native DOM events.
         Provides consistent behavior across different browsers and platforms.</p>
         
-        <hr />
+        <hr style={{width: '100%'}} />
         <h3>React Hooks</h3>
         <h4 style={{marginBottom: 0}}>useState:</h4>
         <p>Hook for adding state to functional components.
@@ -72,7 +72,7 @@ export default function ReactIntroduction() {
         <p>Hook for creating mutable references that persist across renders.
         Commonly used for accessing DOM elements directly.</p>
         
-        <hr />
+        <hr style={{width: '100%'}} />
         <h3>Additional Concepts</h3>
         <h4 style={{marginBottom: 0}}>Fragment:</h4>
         <p>Wrapper component that groups multiple elements without adding extra DOM nodes.
@@ -110,7 +110,7 @@ export default function ReactIntroduction() {
         <p>Components that catch JavaScript errors in child component tree.
         Can display fallback UI and prevent entire app from crashing.</p>
 
-        <hr />
+        <hr style={{width: '100%'}} />
         <h3>Advanced Concepts</h3>
         <h4 style={{marginBottom: 0}}>Code Splitting:</h4>
         <p>Technique to split code into smaller chunks that load on demand.
