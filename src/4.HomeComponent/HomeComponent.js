@@ -44,6 +44,7 @@ export default function ReactIntroduction() {
         
         <hr style={{width: '100%'}} />
         <h3>React Hooks</h3>
+        <p>Functions that let you use state and other React features in functional components.</p>
         <h4 style={{marginBottom: 0}}>useState:</h4>
         <p>Hook for adding state to functional components.
         Returns current state value and a function to update it.</p>
