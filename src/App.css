@@ -59,6 +59,7 @@
 
 .react-app-components {
   /* padding: 20px 20px 200px 20px; */
+  min-height: 79vh;
 }
 
 .react-app-classComponents-header,
@@ -73,6 +74,12 @@
 }
 
 /***Top Nav Bar changes starts **/
+.header-navbar{
+  position: sticky;
+  top: 80px;
+  z-index: 1;
+}
+
 .top-nav-bar {
   width: 100%;
   background: black;
