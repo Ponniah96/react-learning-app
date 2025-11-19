@@ -3,7 +3,7 @@ import ClassStatesToggle from "./4.2.StatesToggle";
 import ClassStatesIncrement from "./4.3.StatesIncrement";
 import "../../App.css";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atelierCaveDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 export default class ClassComponentStates extends Component{
     constructor(props){
         super(props);

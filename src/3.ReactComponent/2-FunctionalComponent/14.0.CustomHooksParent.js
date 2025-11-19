@@ -3,7 +3,7 @@ import useAdd from "./14.1.CustomHooksChild1"
 import useFetchAPI from "./14.2.CustomHookschild2";
 import useResponse from "./14.3CustomHooksChild3";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';                
+import { atelierCaveDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';                
 export default function CustomHooks(){
     const [result1]=useAdd(5,10)
     const [result2]=useAdd(100,50);

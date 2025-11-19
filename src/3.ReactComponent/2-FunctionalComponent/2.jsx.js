@@ -1,13 +1,13 @@
 import React from 'react';
 import "../../App.css";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atelierCaveDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 function functionalComponentJSX(props) {
     const codeString = `
 import React from 'react';
 import "../../App.css";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atelierCaveDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 function functionalComponentJSX(props) {
     return (
         <div className="flex-body">

@@ -1,6 +1,6 @@
 import React,{useState,createContext,useContext} from "react";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atelierCaveDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 const Context = createContext();
 
 export default function FunctionalUseContext(){

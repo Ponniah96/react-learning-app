@@ -1,0 +1,776 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Testing - ReactTestingLibraryExample component 1`] = `
+<DocumentFragment>
+  <div
+    class="flex-body"
+  >
+    <div
+      class="flex-left-content"
+    >
+      <h2
+        data-testid="test-message"
+      >
+        React Testing Library - Examples
+      </h2>
+      <button
+        aria-label="increment-btn"
+      >
+        Increment
+      </button>
+      <p
+        role="status"
+      >
+        Count: 0
+      </p>
+      <input
+        aria-label="sample-input"
+        type="text"
+      />
+    </div>
+    <div
+      class="flex-right-content"
+    >
+      <h3>
+        Query Test methods
+      </h3>
+      <pre
+        id="function-intro-code"
+        style="display: block; overflow-x: auto; background: rgb(25, 23, 28); color: rgb(139, 135, 146); padding: 0.5em;"
+      >
+        <code
+          class="language-javascript"
+          style="white-space: pre;"
+        >
+          <span>
+            
+
+          </span>
+          <span />
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            import
+          </span>
+          <span>
+             {render, screen} 
+          </span>
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            from
+          </span>
+          <span>
+             
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "@testing-library/react"
+          </span>
+          <span>
+            ;
+
+          </span>
+          <span />
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            import
+          </span>
+          <span>
+             ReactTestingLibraryExample 
+          </span>
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            from
+          </span>
+          <span>
+             
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "../React-testing-library-examples"
+          </span>
+          <span>
+            ;
+
+          </span>
+          
+
+
+          <span>
+            test(
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "Query Method - find elements by RTL query methods"
+          </span>
+          <span>
+            , 
+          </span>
+          <span
+            class="hljs-function"
+          >
+            () =&gt;
+          </span>
+          <span>
+             {
+
+          </span>
+          <span>
+              render(
+          </span>
+          <span
+            class="xml"
+            style="color: rgb(190, 70, 120);"
+          >
+            &lt;
+          </span>
+          <span
+            class="xml"
+            style="color: rgb(190, 70, 120);"
+          >
+            ReactTestingLibraryExample
+          </span>
+          <span
+            class="xml"
+            style="color: rgb(190, 70, 120);"
+          >
+             /&gt;
+          </span>
+          <span>
+            );
+
+          </span>
+          
+
+          <span>
+              
+          </span>
+          <span
+            style="color: rgb(126, 120, 135);"
+          >
+            //getByRole
+          </span>
+          <span>
+            
+
+          </span>
+          <span>
+              
+          </span>
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            const
+          </span>
+          <span>
+             roleElement = screen.getByRole(
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "heading"
+          </span>
+          <span>
+            , {
+          </span>
+          <span
+            class="hljs-attr"
+          >
+            name
+          </span>
+          <span>
+            : 
+          </span>
+          <span
+            style="color: rgb(190, 70, 120);"
+          >
+            /react testing library - examples/i
+          </span>
+          <span>
+            });
+
+          </span>
+            expect(roleElement).toBeInTheDocument();
+
+
+          <span>
+              
+          </span>
+          <span
+            style="color: rgb(126, 120, 135);"
+          >
+            //getByLabelText
+          </span>
+          <span>
+            
+
+          </span>
+          <span>
+              expect(screen.getByLabelText(
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "sample-input"
+          </span>
+          <span>
+            )).toBeInTheDocument();
+
+          </span>
+          
+
+
+          <span>
+              
+          </span>
+          <span
+            style="color: rgb(126, 120, 135);"
+          >
+            //getByID
+          </span>
+          <span>
+            
+
+          </span>
+          <span>
+              expect(screen.getByTestId(
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "test-message"
+          </span>
+          <span>
+            )).toBeInTheDocument();
+
+          </span>
+          });
+        </code>
+      </pre>
+      <hr />
+      <h3>
+        Fire Events
+      </h3>
+      <pre
+        id="function-intro-code"
+        style="display: block; overflow-x: auto; background: rgb(25, 23, 28); color: rgb(139, 135, 146); padding: 0.5em;"
+      >
+        <code
+          class="language-javascript"
+          style="white-space: pre;"
+        >
+          <span>
+            
+
+          </span>
+          <span />
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            import
+          </span>
+          <span>
+             {render, screen, fireEvent} 
+          </span>
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            from
+          </span>
+          <span>
+             
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "@testing-library/react"
+          </span>
+          <span>
+            ;
+
+          </span>
+          <span />
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            import
+          </span>
+          <span>
+             ReactTestingLibraryExample 
+          </span>
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            from
+          </span>
+          <span>
+             
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "../React-testing-library-examples"
+          </span>
+          <span>
+            ;
+
+          </span>
+          
+
+          <span>
+            test(
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "fireEvent - simulate user events"
+          </span>
+          <span>
+            , 
+          </span>
+          <span
+            class="hljs-function"
+          >
+            () =&gt;
+          </span>
+          <span>
+             {
+
+          </span>
+          <span>
+              render(
+          </span>
+          <span
+            class="xml"
+            style="color: rgb(190, 70, 120);"
+          >
+            &lt;
+          </span>
+          <span
+            class="xml"
+            style="color: rgb(190, 70, 120);"
+          >
+            ReactTestingLibraryExample
+          </span>
+          <span
+            class="xml"
+            style="color: rgb(190, 70, 120);"
+          >
+             /&gt;
+          </span>
+          <span>
+            );
+
+          </span>
+          
+
+          <span>
+              fireEvent.click(screen.getByLabelText(
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "increment-btn"
+          </span>
+          <span>
+            ));
+
+          </span>
+          
+
+          <span>
+              expect(screen.getByRole(
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "status"
+          </span>
+          <span>
+            )).toHaveTextContent(
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "Count: 1"
+          </span>
+          <span>
+            );
+
+          </span>
+          
+});
+        </code>
+      </pre>
+      <hr />
+      <h3>
+        snapshots
+      </h3>
+      <pre
+        id="function-intro-code"
+        style="display: block; overflow-x: auto; background: rgb(25, 23, 28); color: rgb(139, 135, 146); padding: 0.5em;"
+      >
+        <code
+          class="language-javascript"
+          style="white-space: pre;"
+        >
+          <span>
+            
+
+          </span>
+          <span />
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            import
+          </span>
+          <span>
+             { render } 
+          </span>
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            from
+          </span>
+          <span>
+             
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "@testing-library/react"
+          </span>
+          <span>
+            ;
+
+          </span>
+          <span />
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            import
+          </span>
+          <span>
+             ReactTestingLibraryExample 
+          </span>
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            from
+          </span>
+          <span>
+             
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "../React-testing-library-examples"
+          </span>
+          <span>
+            ;
+
+          </span>
+          
+
+          <span>
+            test(
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            "Snapshot Testing - ReactTestingLibraryExample component"
+          </span>
+          <span>
+            , 
+          </span>
+          <span
+            class="hljs-function"
+          >
+            () =&gt;
+          </span>
+          <span>
+             {
+
+          </span>
+          <span>
+              
+          </span>
+          <span
+            style="color: rgb(149, 90, 231);"
+          >
+            const
+          </span>
+          <span>
+             { asFragment } = render(
+          </span>
+          <span
+            class="xml"
+            style="color: rgb(190, 70, 120);"
+          >
+            &lt;
+          </span>
+          <span
+            class="xml"
+            style="color: rgb(190, 70, 120);"
+          >
+            ReactTestingLibraryExample
+          </span>
+          <span
+            class="xml"
+            style="color: rgb(190, 70, 120);"
+          >
+             /&gt;
+          </span>
+          <span>
+            );
+
+          </span>
+            expect(asFragment()).toMatchSnapshot();
+});
+        </code>
+      </pre>
+      <h4>
+        Snapshot File
+      </h4>
+      <pre
+        id="function-intro-code"
+        style="display: block; overflow-x: auto; background: rgb(25, 23, 28); color: rgb(139, 135, 146); padding: 0.5em;"
+      >
+        <code
+          class="language-javascript"
+          style="white-space: pre;"
+        >
+          <span>
+            
+
+          </span>
+          <span />
+          <span
+            style="color: rgb(126, 120, 135);"
+          >
+            // Jest Snapshot v1, https://goo.gl/fbAQLP
+          </span>
+          <span>
+            
+
+          </span>
+          
+
+          <span />
+          <span
+            style="color: rgb(170, 87, 60);"
+          >
+            exports
+          </span>
+          <span>
+            [
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            'Snapshot Testing - ReactTestingLibraryExample component 1'
+          </span>
+          <span>
+            ] = 
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            '
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            &lt;DocumentFragment&gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+              &lt;div
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                class="flex-body"
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+              &gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                &lt;div
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  class="flex-left-content"
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                &gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  &lt;h2
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                    data-testid="test-message"
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  &gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                    React Testing Library - Examples
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  &lt;/h2&gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  &lt;button
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                    aria-label="increment-btn"
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  &gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                    Increment
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  &lt;/button&gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  &lt;p
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                    role="status"
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  &gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                    Count: 0
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  &lt;/p&gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  &lt;input
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                    aria-label="sample-input"
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                    type="text"
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                  /&gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+                &lt;/div&gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+              &lt;/div&gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            &lt;/DocumentFragment&gt;
+
+          </span>
+          <span
+            style="color: rgb(42, 146, 146);"
+          >
+            '
+          </span>
+          <span>
+            
+
+          </span>
+        </code>
+      </pre>
+    </div>
+  </div>
+</DocumentFragment>
+`;

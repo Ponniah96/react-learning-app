@@ -2,8 +2,8 @@ import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
 import RouterChild1 from "./13.RouterChild1";
 import RouterChild2 from "./13.RouterChild2";
-import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
-import { atelierCaveDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import SyntaxHighlighter from "react-syntax-highlighter/dist/cjs/default-highlight";
+import { atelierCaveDark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 export default function FunctionalRouter() {
   const codeString = `
@@ -11,7 +11,7 @@ import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
 import RouterChild1 from "./13.RouterChild1";
 import RouterChild2 from "./13.RouterChild2";
-import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
+import SyntaxHighlighter from "react-syntax-highlighter/dist/cjs/default-highlight";
 export default function FunctionalRouter() {
   return (
     <div>

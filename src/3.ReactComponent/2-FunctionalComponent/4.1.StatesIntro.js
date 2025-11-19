@@ -5,7 +5,7 @@ import FunctionalStateDataTypes from "./4.5.StateDataTypes";
 import FunctionalStatesTimer from "./4.4.StatesTimer";
 import "../../App.css";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atelierCaveDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 export default function FunctionalComponentStates(){
     const [language1]=useState("HTML");
     const [language2]=useState("CSS");

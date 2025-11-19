@@ -1,6 +1,6 @@
 import React ,{useState,useRef,useMemo} from "react";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atelierCaveDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 export default function FunctionalMemo() {
     const[count,setCount]=useState(0);
     const[countMemo,setCountMemo]=useState(0);

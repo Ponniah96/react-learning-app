@@ -1,6 +1,6 @@
 import "../../App.css";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atelierCaveDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 export default function FunctionalComponentProps(props){
     const codeString=`
 import "../../App.css";

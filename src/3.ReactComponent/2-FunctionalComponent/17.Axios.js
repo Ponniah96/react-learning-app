@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from "react";
-import axios from "axios";
+import * as axios from "axios";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'; 
+import { atelierCaveDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs'; 
 const client=axios.create({
     baseURL:'https://jsonplaceholder.typicode.com/posts'
 })

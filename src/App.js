@@ -39,6 +39,11 @@ import PromiseFunction from "./3.ReactComponent/2-FunctionalComponent/15.Promise
 import Fetch from "./3.ReactComponent/2-FunctionalComponent/16.fetch";
 import Axios from "./3.ReactComponent/2-FunctionalComponent/17.Axios";
 
+
+import ReactTestingLibrary from "./3.ReactComponent/3.Testing/React-testing-library.js";
+import ReactTestingLibraryExample from "./3.ReactComponent/3.Testing/React-testing-library-examples.js";
+import ReactTestingLibraryExampleAPI from "./3.ReactComponent/3.Testing/React-testing-library-example-api.js";
+
 export default function App() {
   return (
     <div className="app">
@@ -108,6 +113,41 @@ export default function App() {
                   >
                     Props
                   </Link>
+                   <Link
+                    className="top-nav-dropdown-links"
+                    to="/functional-router"
+                  >
+                    Router
+                  </Link>
+                  <Link
+                    className="top-nav-dropdown-links"
+                    to="/functional-promise"
+                  >
+                    Promise
+                  </Link>
+                   <Link
+                    className="top-nav-dropdown-links"
+                    to="/functional-events"
+                  >
+                    Events
+                  </Link>
+                  <Link
+                    className="top-nav-dropdown-links"
+                    to="/functional-forms"
+                  >
+                    Forms
+                  </Link>
+                  
+                </div>
+              </li>
+              <li>
+                <a
+                  className="top-nav-bar-links"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  Hooks
+                </a>
+                <div className="top-nav-dropdown" style={{ display: "none" }}>
                   <Link
                     className="top-nav-dropdown-links"
                     to="/functional-state"
@@ -117,12 +157,7 @@ export default function App() {
                   {/* <Link className="top-nav-dropdown-links" to="/functional-state-toggle">State Togle</Link>
                                     <Link className="top-nav-dropdown-links" to="/functional-state-increment">State Increment</Link>
                                     <Link className="top-nav-dropdown-links" to="/functional-state-datatypes">State Data Types</Link> */}
-                  <Link
-                    className="top-nav-dropdown-links"
-                    to="/functional-events"
-                  >
-                    Events
-                  </Link>
+                 
                   <Link className="top-nav-dropdown-links" to="/functional-ref">
                     useRef
                   </Link>
@@ -156,40 +191,13 @@ export default function App() {
                   >
                     useReducer
                   </Link>
-                </div>
-              </li>
-              <li>
-                <a
-                  className="top-nav-bar-links"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Advanced Functional Components
-                </a>
-                <div className="top-nav-dropdown" style={{ display: "none" }}>
                   <Link
                     className="top-nav-dropdown-links"
                     to="/functional-custom-hooks"
                   >
                     Custom Hooks
                   </Link>
-                  <Link
-                    className="top-nav-dropdown-links"
-                    to="/functional-router"
-                  >
-                    Router
-                  </Link>
-                  <Link
-                    className="top-nav-dropdown-links"
-                    to="/functional-promise"
-                  >
-                    Promise
-                  </Link>
-                  <Link
-                    className="top-nav-dropdown-links"
-                    to="/functional-forms"
-                  >
-                    Forms
-                  </Link>
+                 
                   <Link
                     className="top-nav-dropdown-links"
                     to="/functional-fetch"
@@ -201,6 +209,49 @@ export default function App() {
                     to="/functional-axios"
                   >
                     Axios
+                  </Link>
+                </div>
+              </li>              
+              <li>
+                <a
+                  className="top-nav-bar-links"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  API Calls
+                </a>
+                <div className="top-nav-dropdown" style={{ display: "none" }}>
+                 
+                  <Link
+                    className="top-nav-dropdown-links"
+                    to="/functional-fetch"
+                  >
+                    Fetch
+                  </Link>
+                  <Link
+                    className="top-nav-dropdown-links"
+                    to="/functional-axios"
+                  >
+                    Axios
+                  </Link>
+                </div>
+              </li>
+               <li>
+                <a
+                  className="top-nav-bar-links"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  Testing
+                </a>
+                <div className="top-nav-dropdown" style={{ display: "none" }}>
+                  {/* <Link className="top-nav-dropdown-links" to="/functional-custom-hooks">Links</Link> */}
+                  <Link className="top-nav-dropdown-links" to="/react-testing-library">
+                    React Testing Library
+                  </Link>
+                  <Link className="top-nav-dropdown-links" to="/react-testing-library-examples">
+                    Examples
+                  </Link>
+                  <Link className="top-nav-dropdown-links" to="/react-testing-library-example-api">
+                    API Example
                   </Link>
                 </div>
               </li>
@@ -253,6 +304,8 @@ export default function App() {
             </ul>
           </nav>
         </div>
+
+      
         <div className="body">
           <Routes>
             <Route
@@ -334,11 +387,18 @@ export default function App() {
             ></Route>
             <Route path="/functional-fetch" element={<Fetch />}></Route>
             <Route path="/functional-axios" element={<Axios />}></Route>
+            
+            
+            <Route path="/react-testing-library" element={<ReactTestingLibrary />}></Route>  
+            <Route path="/react-testing-library-examples" element={<ReactTestingLibraryExample />}></Route>      
+            <Route path="/react-testing-library-example-api" element={<ReactTestingLibraryExampleAPI />}></Route>      
+
             {/* <Route path="/react-cart-application" component={() => { window.location = 'https://ponniah96.github.io/reactCartApplication/'; return null;} }/> */}
             <Route path="/npm-commands" element={<NpmCommands />}></Route>
           </Routes>
         </div>
       </BrowserRouter>
+      <h1 style={{display:'none'}}>Learn React</h1>
     </div>
   );
 }
