@@ -44,6 +44,15 @@ import ReactTestingLibrary from "./3.ReactComponent/3.Testing/React-testing-libr
 import ReactTestingLibraryExample from "./3.ReactComponent/3.Testing/React-testing-library-examples.js";
 import ReactTestingLibraryExampleAPI from "./3.ReactComponent/3.Testing/React-testing-library-example-api.js";
 
+
+import ReactAbortController from "./3.ReactComponent/4.APICalls/1.AbortController.js";
+import ReactQuery from "./3.ReactComponent/4.APICalls/2.ReactQuery.js";
+
+
+import DynamicImport from "./3.ReactComponent/5.PerformanceOptimisations/1.DynamicImport.js";
+import CodeSplitting from "./3.ReactComponent/5.PerformanceOptimisations/2.CodeSplitting.js";
+import LazyLoadingSuspenseCallback from "./3.ReactComponent/5.PerformanceOptimisations/3.LazyLoadingSuspenseCallback.js";
+
 export default function App() {
   return (
     <div className="app">
@@ -233,6 +242,18 @@ export default function App() {
                   >
                     Axios
                   </Link>
+                  <Link
+                    className="top-nav-dropdown-links"
+                    to="/react-abort-controller"
+                  >
+                    Abort Controller
+                  </Link>
+                  <Link
+                    className="top-nav-dropdown-links"
+                    to="/react-query"
+                  >
+                    React Query
+                  </Link>
                 </div>
               </li>
                <li>
@@ -252,6 +273,36 @@ export default function App() {
                   </Link>
                   <Link className="top-nav-dropdown-links" to="/react-testing-library-example-api">
                     API Example
+                  </Link>
+                </div>
+              </li>
+              <li>
+                <a
+                  className="top-nav-bar-links"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  Performance Optimisations
+                </a>
+                <div className="top-nav-dropdown" style={{ display: "none" }}>
+                 
+                  
+                  <Link
+                    className="top-nav-dropdown-links"
+                    to="/dynamic-import"
+                  >
+                    Dynamic Import
+                  </Link>
+                  <Link
+                    className="top-nav-dropdown-links"
+                    to="/code-splitting"
+                  >
+                    Code Splitting
+                  </Link>
+                  <Link
+                    className="top-nav-dropdown-links"
+                    to="/lazy-loading-suspense-callback"
+                  >
+                    Lazy Loading with Suspense
                   </Link>
                 </div>
               </li>
@@ -391,7 +442,14 @@ export default function App() {
             
             <Route path="/react-testing-library" element={<ReactTestingLibrary />}></Route>  
             <Route path="/react-testing-library-examples" element={<ReactTestingLibraryExample />}></Route>      
-            <Route path="/react-testing-library-example-api" element={<ReactTestingLibraryExampleAPI />}></Route>      
+            <Route path="/react-testing-library-example-api" element={<ReactTestingLibraryExampleAPI />}></Route>  
+
+            <Route path="/react-abort-controller" element={<ReactAbortController />}></Route>  
+            <Route path="/react-query" element={<ReactQuery />}></Route>  
+
+            <Route path="/dynamic-import" element={<DynamicImport />}></Route>
+            <Route path="/code-splitting" element={<CodeSplitting />}></Route>
+            <Route path="/lazy-loading-suspense-callback" element={<LazyLoadingSuspenseCallback />}></Route>
 
             {/* <Route path="/react-cart-application" component={() => { window.location = 'https://ponniah96.github.io/reactCartApplication/'; return null;} }/> */}
             <Route path="/npm-commands" element={<NpmCommands />}></Route>
